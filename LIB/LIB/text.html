@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Job Suggestions</title>
+<style>
+  /* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f3044;
+    color: #fff; /* Text color changed to white */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-left: 20px;
+    text-align: left;
+    color: #fff;
+    margin-top: 0;
+}
+
+/* Skillset section */
+#skillset {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* Background color changed to white */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#skills {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #000; /* Text color changed to black for better readability */
+}
+
+#skills::placeholder {
+    color: #999;
+}
+
+#skillLabel {
+    color: #1f3044; /* Adjusted color for better visibility */
+}
+
+.suggestButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestButton:hover {
+    background-color: #2b7a69;
+}
+
+/* Job suggestion cards */
+/* Job suggestion cards */
+#jobSuggestions {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Align items horizontally to center */
+}
+
+.jobCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 750px; /* Adjust width as needed */
+}
+
+
+.jobCard h2 {
+    margin-top: 0;
+    color: #1f3044; /* Text color changed to a dark shade for better contrast */
+    font-size: 24px;
+}
+
+.jobCard p {
+    color: #555; /* Adjusted text color for better readability */
+    margin-bottom: 15px;
+}
+
+.applyButton {
+    background-color: #4CAF50; /* Changed button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.applyButton:hover {
+    background-color: #2b7a69; /* Darker shade on hover */
+}
+</style>
+</head>
+<body>
+
+<h1><br>    Internship Job Suggestions<br></h1>
+<div id="skillset">
+  <label for="skills" id="skillLabel">Enter your skills:</label>
+  <input type="text" id="skills" placeholder="e.g. Programming, Graphic Design, Marketing">
+  <button class="suggestButton" onclick="suggestJobs()">Get Job Suggestions</button>
+</div>
+<div id="jobSuggestions"></div>
+
+<script>
+function suggestJobs() {
+  var skillsInput = document.getElementById("skills").value;
+  var skillsArray = skillsInput.split(',').map(skill => skill.trim());
+
+  // Dummy job data
+  var jobs = [
+    { title: "Web Developer Intern", description: "Work on front-end and back-end development projects.", applyLink: "https://forms.gle/yourformlink1" },
+    { title: "Graphic Design Intern", description: "Create visual content for marketing campaigns and social media.", applyLink: "https://forms.gle/yourformlink2" },
+    { title: "Marketing Intern", description: "Assist in developing marketing strategies and campaigns.", applyLink: "https://forms.gle/yourformlink3" },
+    { title: "Data Science Intern", description: "Analyze data and develop predictive models.", applyLink: "https://forms.gle/yourformlink4" },
+    { title: "Content Writing Intern", description: "Create engaging and informative content for websites and blogs.", applyLink: "https://forms.gle/yourformlink5" },
+    { title: "Human Resources Intern", description: "Assist in recruitment, onboarding, and HR processes.", applyLink: "https://forms.gle/yourformlink6" },
+    { title: "Finance Intern", description: "Assist in financial analysis, reporting, and budgeting.", applyLink: "https://forms.gle/yourformlink7" },
+    { title: "Software Engineering Intern", description: "Contribute to software development projects and testing.", applyLink: "https://forms.gle/yourformlink8" },
+    { title: "Business Development Intern", description: "Identify new business opportunities and partnerships.", applyLink: "https://forms.gle/yourformlink9" },
+    { title: "Customer Support Intern", description: "Provide assistance and support to customers via email and phone.", applyLink: "https://forms.gle/yourformlink10" },
+    // 50 additional job entries
+    { title: "Social Media Intern", description: "Manage social media accounts and create engaging content.", applyLink: "https://forms.gle/yourformlink11" },
+    { title: "Event Planning Intern", description: "Assist in organizing and coordinating events and conferences.", applyLink: "https://forms.gle/yourformlink12" },
+    { title: "Project Management Intern", description: "Assist in project planning, scheduling, and coordination.", applyLink: "https://forms.gle/yourformlink13" },
+    { title: "Video Production Intern", description: "Create and edit videos for promotional purposes.", applyLink: "https://forms.gle/yourformlink14" },
+    // Add more job objects as needed
+    { title: "UI/UX Design Intern", description: "Design intuitive user interfaces and experiences.", applyLink: "https://forms.gle/yourformlink15" },
+    { title: "Market Research Intern", description: "Conduct market research and analysis.", applyLink: "https://forms.gle/yourformlink16" },
+    { title: "Product Management Intern", description: "Assist in product planning, development, and launch.", applyLink: "https://forms.gle/yourformlink17" },
+    { title: "Quality Assurance Intern", description: "Test software applications for bugs and issues.", applyLink: "https://forms.gle/yourformlink18" },
+    { title: "Public Relations Intern", description: "Assist in managing public relations and communications.", applyLink: "https://forms.gle/yourformlink19" },
+    { title: "Legal Intern", description: "Assist in legal research, documentation, and compliance.", applyLink: "https://forms.gle/yourformlink20" },
+    // 10 additional job entries
+    { title: "Supply Chain Management Intern", description: "Assist in optimizing supply chain processes and logistics.", applyLink: "https://forms.gle/yourformlink21" },
+    { title: "Mobile App Development Intern", description: "Develop mobile applications for iOS and Android platforms.", applyLink: "https://forms.gle/yourformlink22" },
+    { title: "SEO Intern", description: "Optimize website content for search engines.", applyLink: "https://forms.gle/yourformlink23" },
+    { title: "Customer Success Intern", description: "Assist in ensuring customer satisfaction and retention.", applyLink: "https://forms.gle/yourformlink24" },
+    { title: "E-commerce Intern", description: "Assist in managing online sales and operations.", applyLink: "https://forms.gle/yourformlink25" },
+    { title: "UI/UX Research Intern", description: "Conduct user research and usability testing for product design.", applyLink: "https://forms.gle/yourformlink26" },
+    { title: "Network Engineering Intern", description: "Assist in managing and optimizing network infrastructure.", applyLink: "https://forms.gle/yourformlink27" },
+    { title: "Healthcare Intern", description: "Assist in healthcare administration and patient care.", applyLink: "https://forms.gle/yourformlink28" },
+    { title: "Environmental Science Intern", description: "Conduct research and analysis on environmental issues.", applyLink: "https://forms.gle/yourformlink29" },
+    { title: "Business Analytics Intern", description: "Analyze business data to provide insights and recommendations.", applyLink: "https://forms.gle/yourformlink30" },{ title: "Machine Learning Engineer Intern", description: "Develop and deploy machine learning models for various applications.", applyLink: "https://forms.gle/yourformlink31" },
+    { title: "Data Science Intern", description: "Analyze large datasets and develop predictive models using machine learning algorithms.", applyLink: "https://forms.gle/yourformlink32" },
+    { title: "AI Research Intern", description: "Conduct research on artificial intelligence algorithms and techniques.", applyLink: "https://forms.gle/yourformlink33" },
+    { title: "Computer Vision Intern", description: "Work on computer vision projects including object detection, recognition, and image classification.", applyLink: "https://forms.gle/yourformlink34" },
+    { title: "Natural Language Processing Intern", description: "Develop algorithms for natural language understanding, sentiment analysis, and text generation.", applyLink: "https://forms.gle/yourformlink35" },
+    { title: "Deep Learning Intern", description: "Work on deep learning projects involving neural networks, CNNs, and RNNs.", applyLink: "https://forms.gle/yourformlink36" },
+    { title: "Reinforcement Learning Intern", description: "Develop and implement reinforcement learning algorithms for autonomous systems.", applyLink: "https://forms.gle/yourformlink37" },
+    { title: "Machine Learning Operations Intern", description: "Optimize machine learning workflows, model deployment, and monitoring.", applyLink: "https://forms.gle/yourformlink38" },
+    { title: "AI Ethics Intern", description: "Research and address ethical considerations in AI development and deployment.", applyLink: "https://forms.gle/yourformlink39" },
+    { title: "Predictive Analytics Intern", description: "Develop models for predicting user behavior, trends, and outcomes.", applyLink: "https://forms.gle/yourformlink40" },
+    { title: "Healthcare Analytics Intern", description: "Apply machine learning techniques to analyze healthcare data for insights and predictions.", applyLink: "https://forms.gle/yourformlink41" },
+    { title: "Financial Analytics Intern", description: "Use machine learning to analyze financial data for risk assessment and investment strategies.", applyLink: "https://forms.gle/yourformlink42" },
+    { title: "Marketing Analytics Intern", description: "Analyze marketing data to optimize campaigns, segmentation, and customer targeting.", applyLink: "https://forms.gle/yourformlink43" },
+    { title: "Supply Chain Analytics Intern", description: "Apply machine learning models to optimize supply chain logistics and operations.", applyLink: "https://forms.gle/yourformlink44" },
+    { title: "Fraud Detection Intern", description: "Develop algorithms for detecting and preventing fraudulent activities using machine learning.", applyLink: "https://forms.gle/yourformlink45" },
+    { title: "Sentiment Analysis Intern", description: "Analyze social media and customer feedback data to understand sentiment trends.", applyLink: "https://forms.gle/yourformlink46" },
+    { title: "Image Processing Intern", description: "Develop algorithms for image enhancement, segmentation, and pattern recognition.", applyLink: "https://forms.gle/yourformlink47" },
+    { title: "Recommendation Systems Intern", description: "Design and implement recommendation algorithms for personalized content and product recommendations.", applyLink: "https://forms.gle/yourformlink48" },
+    { title: "Speech Recognition Intern", description: "Work on speech recognition projects including automatic transcription and voice-controlled interfaces.", applyLink: "https://forms.gle/yourformlink49" },
+    { title: "Time Series Analysis Intern", description: "Analyze time series data and develop forecasting models using machine learning.", applyLink: "https://forms.gle/yourformlink50" },
+    // Add more job objects as needed
+    // Additional jobs for Python
+    { title: "Python Developer Intern", description: "Develop Python applications for various purposes.", applyLink: "https://forms.gle/yourformlink6" },
+    { title: "Data Analyst Intern (Python)", description: "Analyze data using Python libraries and tools.", applyLink: "https://forms.gle/yourformlink7" },
+    { title: "Machine Learning Intern (Python)", description: "Develop machine learning models using Python.", applyLink: "https://forms.gle/yourformlink8" },
+    { title: "Python Backend Developer Intern", description: "Build server-side applications using Python frameworks.", applyLink: "https://forms.gle/yourformlink9" },
+    { title: "Automation Testing Intern (Python)", description: "Write automated tests using Python testing frameworks.", applyLink: "https://forms.gle/yourformlink10" },
+
+// Additional jobs for Java
+    { title: "Java Developer Intern", description: "Develop Java applications for enterprise solutions.", applyLink: "https://forms.gle/yourformlink11" },
+    { title: "Android App Development Intern", description: "Build Android applications using Java.", applyLink: "https://forms.gle/yourformlink12" },
+    { title: "Backend Development Intern (Java)", description: "Develop server-side logic using Java frameworks.", applyLink: "https://forms.gle/yourformlink13" },
+    { title: "Software Testing Intern (Java)", description: "Write and execute test cases for Java applications.", applyLink: "https://forms.gle/yourformlink14" },
+    { title: "Java Web Developer Intern", description: "Create web applications using Java EE technologies.", applyLink: "https://forms.gle/yourformlink15"},
+
+// Additional jobs for HTML and CSS
+{ title: "Frontend Development Intern", description: "Design and develop user interfaces using HTML and CSS.", applyLink: "https://forms.gle/yourformlink16" },
+{ title: "UI/UX Design Intern", description: "Create user-friendly designs using HTML and CSS.", applyLink: "https://forms.gle/yourformlink17" },
+{ title: "Web Design Intern", description: "Design visually appealing websites with HTML and CSS.", applyLink: "https://forms.gle/yourformlink18" },
+{ title: "HTML Email Developer Intern", description: "Code responsive HTML emails using HTML and CSS.", applyLink: "https://forms.gle/yourformlink19" },
+{ title: "CSS Styling Intern", description: "Enhance web pages with advanced CSS styling techniques.", applyLink: "https://forms.gle/yourformlink20" },
+
+// Additional jobs for C++
+{ title: "C++ Software Developer Intern", description: "Develop software applications using C++.", applyLink: "https://forms.gle/yourformlink21" },
+{ title: "Game Development Intern (C++)", description: "Create games using C++ and game development frameworks.", applyLink: "https://forms.gle/yourformlink22" },
+{ title: "Embedded Systems Intern (C++)", description: "Work on embedded systems projects using C++.", applyLink: "https://forms.gle/yourformlink23" },
+{ title: "Systems Programming Intern (C++)", description: "Develop system software and utilities using C++.", applyLink: "https://forms.gle/yourformlink24" },
+{ title: "C++ Algorithm Intern", description: "Implement algorithms and data structures in C++.", applyLink: "https://forms.gle/yourformlink25" }
+
+  ];
+
+
+  var jobSuggestionsContainer = document.getElementById("jobSuggestions");
+  jobSuggestionsContainer.innerHTML = "";
+
+  jobs.forEach(function(job) {
+    if (skillsArray.some(skill => job.description.toLowerCase().includes(skill.toLowerCase()))) {
+      var jobCard = document.createElement("div");
+      jobCard.classList.add("jobCard");
+      jobCard.innerHTML = `
+        <h2>${job.title}</h2>
+        <p>${job.description}</p>
+        <button class="applyButton" onclick="window.open('${job.applyLink}', '_blank')">Apply</button>
+      `;
+      jobSuggestionsContainer.appendChild(jobCard);
+    }
+  });
+}
+</script>
+
+</body>
+</html>

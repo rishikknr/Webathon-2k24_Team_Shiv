@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java CBP</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css">
+    <link id="global-css" rel="stylesheet" href="../src/index.css">
+</head>
+<body class="bg-dark bg-gradient">
+    <noscript>You need JavaScript to run this code editor</noscript>
+
+    <!-- nav bar -->
+    <header class="text-center text-white p-1">
+        <h1>Code Editor</h1>
+    </header>
+
+    <main>
+        <!-- Left side part -->        
+        <div class="code-editor-area">
+            <div class=" w-100 p-1 editor-header">
+                <div>
+                    <label for="language">Language:</label>
+                    <select name="language" id="language" class="drop-down" default="java">
+                    </select>
+                
+                    <label for="theme">Theme:</label>
+                    <select name="theme" id="theme" class="drop-down">
+                    </select>
+                </div>
+                <button id="run">Run</button>
+            </div>
+            <!-- This div tag with the id #editor should'nt be removed or modified and should have no children -->
+            <div id="editor"></div>
+            <!-- <textarea name="editor" id="editor" cols="30" rows="10"></textarea> -->
+        </div>
+        <!-- Left side part part ends -->
+    
+        <!-- Right side part starts -->
+        <div class="console-area">
+            <div class="input-area">
+                <div class="input-header">
+                    <h4 class="text-white input-output-text">Input</h4>
+                </div>
+                <textarea name="input" id="input-box" cols="70" rows="70" placeholder="//Enter the input if needed"></textarea>
+            </div>
+    
+            <div class="output-area">
+                <h4 class="input-output-text">Output</h4>
+                <p id="output"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="../src/index.js"></script>
+    <script src="../node_modules/codemirror/lib/codemirror.js"></script>
+    <!-- Language Support scripts -->
+    <script src="../node_modules/codemirror/mode/javascript/javascript.js"></script>
+    <script src="../node_modules/codemirror/mode/python/python.js"></script>
+    <script src="../node_modules/codemirror/mode/clike/clike.js"></script>
+    <!-- Addon Scripts -->
+    <script src="../node_modules/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="../node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="../node_modules/codemirror/addon/hint/show-hint.js"></script>
+    <script src="../node_modules/codemirror/addon/hint/anyword-hint.js"></script>
+    <script src="../node_modules/codemirror/addon/selection/active-line.js"></script>
+    <!-- Editor Script -->
+    <script src="../src/editor.js"></script>
+    <script src="../src/run.js"></script>
+</body>
+</html>   

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100% ;
+    background-image: url('https://t4.ftcdn.net/jpg/02/18/89/83/360_F_218898398_wnLuoR9GY4qhLB2tc7o3tSJbQCRfq0xc.jpg');
+    /*    star  background-image: url('https://www.totaltek.com/wp-content/uploads/2022/01/Computer-Programming-Languages.jpg'); */
+    /* background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg'); */
+    /* background-image: url('https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: ; */
+    height : 10vh;
+    background-position: center;
+}
+
+.editor-header{
+    
+    background-color: 	#00124a;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+    /* height: 60px; */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.code-editor-area, .console-area {
+    border: 1px solid black;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+button{   
+    padding-left:15px;
+    padding-right:15px;
+    margin-right: 0.5vw;
+    height: 30px;
+    font-size: 1rem;
+    
+}
+
+button:hover{
+    /* background-color: #006adc; */
+    background-color: 	#6c9c27;
+    color: whitesmoke;
+}
+.code-editor-area {
+    min-height: 90vh;
+}
+
+textarea, #output {
+    background-color: black;
+    color: white;
+}
+
+#output {
+    height: 100%;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+    padding-left: 8px;
+    padding-top: 5px;
+
+  }
+
+.editor-header {
+    padding: 15px; 
+}
+
+.input-area {
+
+    background-color: #00124a;
+}
+
+#input-box {
+    width: 50vw;
+    max-height: 40vh;
+}
+.input-output-text
+{
+    margin-left: 10px;
+    
+}
+
+.output-area {
+    background-color: #00124a;
+    color:white;
+    height: 50%;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+#Language{
+    margin-right: 1vw;
+}
+
+#editor {
+    /* height:  */
+    height: 100vh;
+}
+
+.CodeMirror {
+    height: 100%;
+}
+
+.CodeMirror-wrap pre {
+    word-break: break-word;
+}
