@@ -1,0 +1,65 @@
+.navbar {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	background-color: #1F3044;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	color: #fff; 
+	font-family: sans-serif; 
+  }
+
+  .navbar-in{
+	justify-content:flex-end;
+  }
+  
+  .navbar h1 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+  }
+  
+  .navbar select {
+	background-color: #272727;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	color: #fff;
+  }
+  
+  .navbar label {
+	cursor: pointer;
+	margin: 0 10px;
+  }
+  
+  .navbar input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100px;
+	height: 5px;
+	background-color: #ddd;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .navbar input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #333; 
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .navbar input[type="range"]::-webkit-slider-runnable-track {
+	background-color: #ddd; 
+	border-radius: 5px;
+  }
+  

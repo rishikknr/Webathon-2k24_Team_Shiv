@@ -1,0 +1,493 @@
+/* styles.css */
+body{
+    margin: 0%;
+    background: linear-gradient(to bottom,#1F3044 15%,#fff 15%);
+    color: rgb(0, 0, 0);
+}
+.navgation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1F3044;
+}
+.container {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+  }
+  
+.navleft{
+    padding-left: 20px;
+    
+}
+.logoimg{
+    height: 80px;
+}
+.navright{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wayright{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px;
+}
+.a-element{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.c-element{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #2b7a69;
+    background-color: #2b7a69 ;
+    border-radius: 50px;
+}
+.d-element{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #2b7a69;
+    background-color: #2b7a69 ;
+    border-radius: 50px;
+}
+.e-element{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid #ffffff;
+    
+    border-radius: 50px;
+}
+.b-element{
+    padding: 10px;
+    padding-left: 50px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    
+    
+}
+.sujith{
+    text-decoration: underline;
+}
+.glow{
+    text-align: left;
+    color: white;
+}
+.homeleft{
+    width: 50vw;
+    padding: 80px;
+    padding-top: 50px;
+}
+.homeright{
+    width: 50vw;
+    padding: 80px;
+    padding-top: 50px;
+}
+.pic{
+    height: 300px;
+    
+}
+.SERVICES{
+    padding: 10px;
+    text-align: center;
+    padding-bottom: px;
+
+}
+.SERVICES2{
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 100px;
+
+}
+.multi{
+    padding: 60px;
+}
+.branding{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(53, 143, 202);
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.things{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.card{
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(53, 143, 202);
+    margin: 20px;
+    border-width: 5px;
+    padding:11px;
+    width: 400px;
+    
+}
+.CONTACT{
+    text-align: center;
+    padding-bottom: 500px;
+}
+.cot{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(53, 143, 202);
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.info{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.insta{
+    height: 50px;
+    padding: 20px;
+}
+.snap{
+    height: 50px;
+    padding: 20px;
+}
+.fb{
+    height: 50px;
+    padding: 20px;
+}
+.linkedin{
+    height: 50px;
+    padding: 20px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2b7a69;
+    color: #fff;
+}
+
+.btn-danger-outline {
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+.btn-danger-outline:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.features-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.soc-item {
+    margin: 0 10px;
+}
+
+.mbr-fonts-style {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 20px;
+}
+.rishi {
+    text-align: center;
+    font-size: 4rem; /* Adjust the font size as needed */
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 10px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+
+
+
+.container {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-top: 0;
+  }
+  
+  .card-text {
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+
+.card {
+    flex: 1 1 300px; /* Adjust as needed */
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-img-top img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    text-align: center;
+}
+.item {
+    margin-bottom: 20px;
+}
+
+.item-wrapper {
+    border: 1px solid #ddd; /* Add border or any other styling as needed */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+
+.item-content {
+    padding: 20px;
+}
+
+.item-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.item-footer {
+    text-align: center;
+}
+
+.copyright{
+    align-self: center;
+    align-items: center;
+}
