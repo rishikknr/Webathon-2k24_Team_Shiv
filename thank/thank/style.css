@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1F3044;
+  }
+  
+  .thankyou-container {
+    background-color:white;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    height: 200px; 
+    
+    box-sizing: border-box;
+    
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    
+  }
+  .the{
+    color: rgb(0, 0, 0);
+  }
+  
