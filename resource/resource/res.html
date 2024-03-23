@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Structures and Algorithms</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #eee;
+      margin: 2rem;
+      background-color: #222;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      width: 100%;
+    }
+
+    /* Card styles */
+    .card {
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease-in-out;
+      width: 250px; /* Adjust width as needed */
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .card-content {
+      color: #eee;
+      line-height: 1.5;
+    }
+
+    .card-link {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .card-link:hover {
+      color: #ddd;
+    }
+
+    /* Dropdown button styles */
+    
+    .dropdown-btn{
+        position:center;
+        background-color: #2b7a69;
+    }
+
+    .dropdown-btn:hover {
+        position: center;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem;
+        background-color: #2b7a69;
+        color: white;
+        border: none;
+        border-radius: 0 0 5px 0;
+        cursor: pointer;
+    }
+
+    /* Dropdown content styles */
+    .dropdown-content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Data Structures and Algorithms</h1>
+
+  <div class="card">
+    <h3 class="card-title">Queues</h3>
+    <p class="card-content">Queues are a fundamental data structure that follow a First In, First Out (FIFO) principle. Imagine a line at a store - the first person in line is the first person served.</p>
+    <button class="dropdown-btn" onclick="toggleDropdown('queues')">Open</button>
+    <div id="queues" class="dropdown-content">
+      <a href="https://www.youtube.com/watch?v=yzj0Ch01Exo" class="card-link" target="_blank">Youtube</a>
+      <a href="https://www.geeksforgeeks.org/queue-data-structure/" class="card-link" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm" class="card-link" target="_blank">Tutorialspoint</a>
+      <a href="https://www.w3schools.com/dsa/dsa_data_queues.php" class="card-link" target="_blank">W3Schools</a>
+      <a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)" class="card-link" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title">Stacks</h3>
+    <p class="card-content">Stacks follow a Last In, First Out (LIFO) principle. Imagine a stack of plates - the last plate added is the first one removed.</p>
+    <button class="dropdown-btn" onclick="toggleDropdown('stacks')">Open</button>
+    <div id="stacks" class="dropdown-content">
+      <a href="https://www.youtube.com/watch?v=wjI1WNcIntg" class="card-link" target="_blank">Youtube</a>
+      <a href="https://www.geeksforgeeks.org/stack-data-structure/" class="card-link" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm" class="card-link" target="_blank">Tutorialspoint</a>
+      <a href="https://www.w3schools.com/dsa/dsa_data_stacks.php" class="card-link" target="_blank">W3Schools</a>
+      <a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)" class="card-link" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <h3 class="card-title">Linked Lists</h3>
+    <p class="card-content">Linked lists are sequential data structures consisting of nodes, each containing data and a reference to the next node, allowing for dynamic memory allocation and efficient insertion or deletion of elements.</p>
+    <button class="dropdown-btn" onclick="toggleDropdown('linked-lists')">Open</button>
+    <div id="linked-lists" class="dropdown-content">
+      <a href="https://www.youtube.com/watch?v=njTh_OwMljA" class="card-link" target="_blank">Youtube</a>
+      <a href="https://www.geeksforgeeks.org/data-structures/linked-list/" class="card-link" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm" class="card-link" target="_blank">Tutorialspoint</a>
+      <a href="https://www.w3schools.com/dsa/dsa_theory_linkedlists.php" class="card-link" target="_blank">W3Schools</a>
+      <a href="https://en.wikipedia.org/wiki/Linked_list" class="card-link" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <h3 class="card-title">Trees</h3>
+    <p class="card-content">Trees are hierarchical data structures used for efficient storage and retrieval of data, representing relationships between nodes in a parent-child manner.</p>
+    <button class="dropdown-btn" onclick="toggleDropdown('trees')">Open</button>
+    <div id="trees" class="dropdown-content">
+      <a href="https://www.youtube.com/watch?v=9oTV7fDEaCY&pp=ygUUdHJlZSBkYXRhIHN0cnVjdHVyZXM%3D" class="card-link" target="_blank">Youtube</a>
+            <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/" class="card-link" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm" class="card-link" target="_blank">Tutorialspoint</a>
+      <a href="https://www.w3schools.com/dsa/dsa_theory_trees.php" class="card-link" target="_blank">W3Schools</a>
+      <a href="https://en.wikipedia.org/wiki/Tree_(data_structure)" class="card-link" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <h3 class="card-title">Dijkstra's Algorithm</h3>
+    <p class="card-content">Dijkstra's Algorithm is a graph traversal algorithm used to find the shortest path between nodes in a weighted graph, efficiently determining the optimal route in various applications such as routing protocols and network optimization.</p>
+    <button class="dropdown-btn" onclick="toggleDropdown('dijkstra')">Open</button>
+    <div id="dijkstra" class="dropdown-content">
+      <a href="https://www.youtube.com/watch?v=XB4MIexjvY0&pp=ygUTZGlqa3N0cmFzIGFsZ29yaXRobQ%3D%3D" class="card-link" target="_blank">Youtube</a>
+      <a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/" class="card-link" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php" class="card-link" target="_blank">W3Schools</a>
+      <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#:~:text=Dijkstra's%20algorithm%20(%2F%CB%88da%C9%AA,and%20published%20three%20years%20later." class="card-link" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown(id) {
+      var dropdownContent = document.getElementById(id);
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
+
+     
